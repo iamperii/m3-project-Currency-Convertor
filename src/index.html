@@ -27,6 +27,51 @@
 				<li class="nav-links login">ВОЙТИ</li>
 			</ul>
 		</header>
+
+		<main>
+			<div class="currency-converter">
+				<h1 class="title">Конвертер валют онлайн</h1>
+				<div class="convertors">
+					<div class="conversion-form">
+						<p class="text">У меня есть</p>
+						<div class="button-container">
+							<ul class="currency-btns">
+								<li class="from-currency btns">RUB</li>
+								<li class="from-currency btns">USD</li>
+								<li class="from-currency btns">EUR</li>
+								<li class="from-currency btns">GBP</li>
+							</ul>
+						</div>
+						<div class="currency-pair-input">
+							<form action="">
+								<input
+									type="number"
+									class="amount-input"
+									value="5000"
+									min="0"
+									placeholder="nese olacaqda burda indi"
+								/>
+							</form>
+							<p class="currency-pair">1 RUB = 0.0135 USD</p>
+						</div>
+					</div>
+
+					<div class="conversion-result">
+						<p class="text">Хочу приобрести</p>
+						<div class="button-container">
+							<ul class="convert-buttons">
+								<li class="convert-button btns">RUB</li>
+								<li class="convert-button btns">USD</li>
+								<li class="convert-button btns">EUR</li>
+								<li class="convert-button btns">GBP</li>
+							</ul>
+						</div>
+						<input type="number" disabled class="result-amount" value="0.00" />
+						<p class="exchange-rate-label">1 USD = 73.8896 RUB</p>
+					</div>
+				</div>
+			</div>
+		</main>
 		<script src="./script.js"></script>
 	</body>
 </html>
