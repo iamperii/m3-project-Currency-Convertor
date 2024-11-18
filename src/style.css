@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto';
+	overflow: hidden;
+}
+
+header {
+	width: 100%;
+	height: clamp(60px, 10vh, 100px);
+	transition: height 0.3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f5f5f6;
+	padding: 20px;
+	position: relative;
+	background-size: cover;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.nav-links {
+	list-style-type: none;
+	color: #959ba4;
+	font-weight: bold;
+	position: relative;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.bank {
+	color: inherit;
+}
+.img {
+	position: absolute;
+	margin-left: 20px;
+	left: 100px;
+}
+
+.login {
+	color: inherit;
+	border-radius: 10px;
+	background-color: white;
+	padding: 10px;
+	right: -200px;
+}
+.hamburger-menu-none {
+	display: none;
+}
