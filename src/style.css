@@ -20,7 +20,7 @@ header {
 	justify-content: center;
 	background-color: #f5f5f6;
 	padding: 20px;
-	position: relative;
+	/* position: relative; */
 }
 .nav {
 	display: flex;
@@ -66,7 +66,7 @@ main {
 }
 .title {
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 50px;
 }
 .text {
 	color: #9f9f9f;
@@ -87,33 +87,34 @@ main {
 	border: 1px solid lightgray;
 	padding: 20px;
 	display: flex;
-	justify-content: space space-between;
+	justify-content: space-between;
 	flex-direction: column;
 	gap: 50px;
+	border-radius: 10px;
 }
 .btns {
 	width: 25%;
-	border: 1px black solid;
-	color: black;
+	border: 1px #e5e5e5 solid;
+	color: #c6c6c6;
 	background-color: white;
 	padding: 10px 20px;
 	border-right: none;
 }
-.btns:first-child{
+.btns:first-child {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-.btns:last-child{
+.btns:last-child {
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 .btns:last-child {
-	border-right: 1px solid black;
+	border-right: 1px solid #E5E5E5;
 }
 
 .conversion-form,
 .conversion-result {
-	padding: 40px 0px;
+	padding: 60px 0px;
 	display: flex;
 	align-items: start;
 	flex-direction: column;
@@ -129,4 +130,8 @@ main {
 }
 .hamburger-menu-none {
 	display: none;
+}
+.exchange-label,
+.currency-label {
+	color: #c6c6c6;
 }
