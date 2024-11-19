@@ -100,6 +100,13 @@ main {
 	padding: 10px 20px;
 	border-right: none;
 }
+.to-focused,
+.from-focused {
+	background-color: #833ae0;
+	color: white;
+	cursor: pointer;
+}
+
 .btns:first-child {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -109,7 +116,7 @@ main {
 	border-bottom-right-radius: 5px;
 }
 .btns:last-child {
-	border-right: 1px solid #E5E5E5;
+	border-right: 1px solid #e5e5e5;
 }
 
 .conversion-form,
