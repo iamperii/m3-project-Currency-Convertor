@@ -3,16 +3,35 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 	font-family: 'Roboto';
 }
 
 body {
 	width: 100vw;
 	height: 100vh;
-	/* overflow: hidden; */
+	overflow: hidden;
+	/* transition: 0.3s ; */
 }
-
+.error-container {
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+}
+.error-box{
+	/* margin: auto; */
+	width: 51%;
+}
+.text-message {
+	font-size: 22px;
+}
+.description-text {
+	color: #9f9f9f;
+	font-size: 17px;
+}
 header {
 	width: 100%;
 	display: flex;
@@ -27,6 +46,8 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	gap: 50px;
+	margin-left: 373px;
+	width: 70%;
 }
 
 .nav-links {
@@ -43,8 +64,10 @@ header {
 }
 .img {
 	position: absolute;
-	margin-left: 20px;
+	/* margin-left: 20px; */
 	left: 100px;
+	top: 30px;
+	display: block;
 }
 
 .login {
@@ -72,6 +95,7 @@ main {
 	color: #9f9f9f;
 }
 .convertors {
+	width: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -84,7 +108,7 @@ main {
 }
 
 .pair-input {
-	border: 1px solid lightgray;
+	border: 2px solid lightgray;
 	padding: 20px;
 	display: flex;
 	justify-content: space-between;
@@ -94,7 +118,7 @@ main {
 }
 .btns {
 	width: 25%;
-	border: 1px #e5e5e5 solid;
+	border: 2px #e5e5e5 solid;
 	color: #c6c6c6;
 	background-color: white;
 	padding: 10px 20px;
@@ -116,7 +140,7 @@ main {
 	border-bottom-right-radius: 5px;
 }
 .btns:last-child {
-	border-right: 1px solid #e5e5e5;
+	border-right: 2px solid #e5e5e5;
 }
 
 .conversion-form,
@@ -135,10 +159,67 @@ main {
 	border: none;
 	font-weight: 600;
 }
-.hamburger-menu-none {
+.hamburger {
 	display: none;
 }
 .exchange-label,
 .currency-label {
 	color: #c6c6c6;
+}
+
+@media screen and (max-width: 1500px) {
+	.hamburger {
+		display: block;
+		position: absolute;
+		right: 30px;
+		top: 18px;
+	}
+	.nav {
+		display: none;
+	}
+	header {
+		padding: 40px;
+	}
+	main {
+		transition: width 0.7s ease;
+		width: 90%;
+		margin: auto;
+	}
+
+	.convertors {
+		width: 100%;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	}
+	.conversion-form,
+	.conversion-result {
+		width: 70%;
+	}
+	.currency-converter {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.title {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.pair-input {
+		width: 100%;
+		padding: 15px;
+	}
+
+	.amount,
+	.result {
+		font-size: 24px;
+	}
+
+	.btns {
+		width: 100%;
+	}
+	/* .sidebar{
+
+	} */
 }
