@@ -15,7 +15,7 @@ const hamburgerIcon = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
 // console.log(nav.classList.value);
 hamburgerIcon.addEventListener('click', () => {
-let navClass = nav.classList.value;
+	let navClass = nav.classList.value;
 
 	if (navClass !== 'side-bar') {
 		nav.classList.remove('nav');
@@ -24,7 +24,6 @@ let navClass = nav.classList.value;
 		nav.classList.remove('side-bar');
 		nav.classList.add('nav');
 	}
-	//! duzelecek
 	console.log(nav.classList.value);
 });
 
