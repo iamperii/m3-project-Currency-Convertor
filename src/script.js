@@ -111,9 +111,9 @@ function dataApi() {
 		}
 	});
 
-	window.addEventListener('load', () => {
-		toconvertCurrency();
-	});
+	// window.addEventListener('load', () => {
+	// toconvertCurrency();
+	// });
 
 	toconvertCurrency();
 }
@@ -131,4 +131,4 @@ function offlineMode() {
 }
 
 window.addEventListener('offline', offlineMode);
-document.addEventListener('click', dataApi);
+document.addEventListener('DOMContentLoaded', dataApi);
