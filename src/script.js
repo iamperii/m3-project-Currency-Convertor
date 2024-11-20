@@ -13,12 +13,19 @@ let toValue = 'USD';
 
 const hamburgerIcon = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
-
-let amountComma = amountInput.value.split('');
+// console.log(nav.classList.value);
 hamburgerIcon.addEventListener('click', () => {
-	nav.classList.add('side-bar');
-	nav.classList.remove('nav');
+let navClass = nav.classList.value;
+
+	if (navClass !== 'side-bar') {
+		nav.classList.remove('nav');
+		nav.classList.add('side-bar');
+	} else {
+		nav.classList.remove('side-bar');
+		nav.classList.add('nav');
+	}
 	//! duzelecek
+	console.log(nav.classList.value);
 });
 
 let from = document.querySelectorAll('.from');
@@ -50,6 +57,7 @@ amountInput.addEventListener('input', () => {
 });
 
 async function toconvertCurrency() {
+	amount = +amount;
 	if (fromValue === toValue) {
 		resultInput.value = amountInput.value || 0;
 		currencyLabel.textContent = `1 ${fromValue} = 1 ${toValue}`;
@@ -92,6 +100,5 @@ function offlineMode() {
 		toconvertCurrency();
 	}
 }
-offlineMode();
 window.addEventListener('offline', offlineMode);
-window.addEventListener('online', offlineMode);
+// window.addEventListener('online', offlineMode);
