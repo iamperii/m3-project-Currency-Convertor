@@ -1,8 +1,6 @@
-![image](https://github.com/user-attachments/assets/38122f89-bba6-4967-9182-a1c23611d750)# m3-project-Currency-Convertor
+### m3-project-Currency-Convertor
 
 ### Currency Convertor.
-
-# Currency Converter
 
 The **Currency Converter** is a responsive web application that allows users to convert currencies quickly and easily. The application fetches real-time exchange rates using an API and provides accurate conversion results.
 
