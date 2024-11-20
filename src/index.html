@@ -8,15 +8,25 @@
 		<title>Currency Convertor</title>
 	</head>
 	<body>
+		<div class="error-container">
+			<img src="../svg/error.svg" alt="Internet Error" class="error-img" />
+			<div class="error-box">
+				<h1 class="text-message">
+					Oh no! We're experiencing some network issues!
+				</h1>
+				<p class="description-text">
+					Unfortunately, our app isn't so cool without internet. Check your
+					internet connection.
+				</p>
+			</div>
+		</div>
 		<header>
 			<div class="hamburger">
-				<img src="../svg/burger-menu-svgrepo-com.svg" alt="Hamburger Menu" />
+				<img src="../svg/hamburger.svg" alt="Hamburger Menu" />
 			</div>
+			<img src="../svg/bank-logo.svg" alt="" class="img" />
 
 			<ul class="nav">
-				<li class="nav-links img">
-					<img src="../svg/bank-logo.svg" alt="" />
-				</li>
 				<li class="nav-links bank">БАНК</li>
 				<li class="nav-links">БИЗНЕС</li>
 				<li class="nav-links">ИНВЕСТИЦИИ</li>
@@ -35,16 +45,16 @@
 					<div class="conversion-form">
 						<p class="text">У меня есть</p>
 						<div class="container-btns">
-							<button class="btns from from-focused " value="RUB">RUB</button>
+							<button class="btns from from-focused" value="RUB">RUB</button>
 							<button class="btns from" value="USD">USD</button>
 							<button class="btns from" value="EUR">EUR</button>
 							<button class="btns from" value="GBP">GBP</button>
 						</div>
 						<div class="pair-input">
 							<form action="">
-								<input type="number" class="amount" value="5000" />
+								<input type="text" class="amount" value="5000" />
 							</form>
-							<p class="currency-label">1 RUB = 0.0135 USD</p>
+							<p class="currency-label"></p>
 						</div>
 					</div>
 
@@ -52,13 +62,13 @@
 						<p class="text">Хочу приобрести</p>
 						<div class="container-btns">
 							<button class="btns to" value="RUB">RUB</button>
-							<button class="btns to to-focused " value="USD">USD</button>
+							<button class="btns to to-focused" value="USD">USD</button>
 							<button class="btns to" value="EUR">EUR</button>
 							<button class="btns to" value="GBP">GBP</button>
 						</div>
 						<div class="pair-input">
-							<input type="text" class="result" value="67.6685" />
-							<p class="exchange-label">1 USD = 73.8896 RUB</p>
+							<input type="text" class="result" disabled />
+							<p class="exchange-label"></p>
 						</div>
 					</div>
 				</div>
