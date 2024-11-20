@@ -79,3 +79,19 @@ async function toconvertCurrency() {
 	// console.log(resultInput)
 }
 toconvertCurrency();
+
+function offlineMode() {
+	if (!navigator.onLine) {
+		header.style.display = 'none';
+		main.style.display = 'none';
+		errorContainer.style.display = 'flex';
+	} else {
+		errorContainer.style.display = 'none';
+		header.style.display = 'block';
+		main.style.display = 'block';
+		toconvertCurrency();
+	}
+}
+offlineMode();
+window.addEventListener('offline', offlineMode);
+window.addEventListener('online', offlineMode);
